@@ -3,8 +3,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Getting Started
 
 1. run `npm install`
-2. run `npm start`
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Create .env file in the root directory, create and fill the value of 
+
+REACT_APP_DEV_IRIS_PORT={YOUR IRIS INSTANCE PORT}
+
+REACT_APP_INTEROP_IRIS_PORT={NotificationRESTService Interoperability Port}
+
+```
+Example:
+REACT_APP_DEV_IRIS_PORT=52774
+REACT_APP_INTEROP_IRIS_PORT=9999
+N.B. For Interop Only:
+(In the `Interoperability->{YOUR IRIS DEV NAMESPACE}->Configure->Production->Basic Settings->Port)` Port (If have never opened the Interoperability, go to `Interoperability->{YOUR IRIS DEV NAMESPACE}->List->Productions` and choose Logistics.CommunityLogisticsProject to open them)
+```
+3. run `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
